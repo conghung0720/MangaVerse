@@ -1,0 +1,26 @@
+.swiper-pagination {
+  /* display: flex !important; */
+  position: relative !important;
+  bottom: 0% !important;
+  justify-content: center;
+  margin-top: 20px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 9px !important;
+  height: 9px !important;
+  border-radius: 50%;
+  background-color: #e77676;
+  background: #9e9eb9 !important;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ffac33 !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+
+
