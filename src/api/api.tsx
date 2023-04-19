@@ -21,7 +21,7 @@ const UseCheckParams = async () => {
 
 export const apiManga = createApi({
   reducerPath: "api",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:8000" }),
+  baseQuery: fetchBaseQuery({ baseUrl: process.env.REACT_APP_API }),
   endpoints: (builder) => ({
     getAllSize: builder.query({
       query: () => `/`,
