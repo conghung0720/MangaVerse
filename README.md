@@ -10,8 +10,8 @@ Thanks for data LhManga :)
 
 
 ## Todo
-
-- [x] Side Menu
+- [x] Search Menu
+- [ ] Side Menu
 - [ ] Save Chapter
 - [ ] View History
 - [ ] Vote/Rating
