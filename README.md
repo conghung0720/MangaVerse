@@ -11,9 +11,9 @@ Thanks for data LhManga :)
 
 ## Todo
 
-* Side Menu
-* Save Chapter
-* View History
-* Vote/Rating
-* User Profile
-* Login/Register
+- [x] Side Menu
+- [ ] Save Chapter
+- [ ] View History
+- [ ] Vote/Rating
+- [ ] User Profile
+- [ ] Login/Register
