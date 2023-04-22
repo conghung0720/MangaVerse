@@ -11,7 +11,8 @@ Thanks for data LhManga :)
 
 ## Todo
 - [x] Search Menu
-- [ ] Side Menu
+- [x] SideMenu List Chapter
+- [ ] SideMenu Inside ReadPage
 - [ ] Save Chapter
 - [ ] View History
 - [ ] Vote/Rating
