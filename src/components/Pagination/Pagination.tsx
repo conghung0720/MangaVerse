@@ -12,26 +12,25 @@ const Pagination: React.FC<{ sizePagination: number }> = (
 ): JSX.Element => {
   let [searchParams, setSearchParams] = useSearchParams();
   const isGetAllParams: Record<string, string> = GetParamsSearch();
+  
+  
   let currentPage: number = Number(searchParams.get("page")) || 1;
   const sizePagination: number = props.sizePagination;
-
-  let previousPage: number = useMemo(
+  let fullSizePage: number = useMemo(
     () =>
       Math.round(sizePagination / 6) > 5 ? 5 : Math.round(sizePagination / 6),
     [sizePagination]
   );
-
-  let fullSizePage: number = Math.round(sizePagination / 6) + 1;
+  let lastPage: number = Math.round(sizePagination / 6) + 1;
 
   const multiPages: number[] = useMemo(() => {
-    return new Array(previousPage).fill(null).map((_, index) => {
-      if (currentPage > 3 && currentPage <= fullSizePage - 2) {
+    return new Array(fullSizePage).fill(null).map((_, index) => {
+      if (currentPage > 3 && currentPage <= lastPage - 2) {
         return index + currentPage - 2;
       }
-      //fullSizePage = 113, currentPage middle = 110
-      //When page > 3, target in middle
-      if (currentPage > 3 && currentPage > fullSizePage - 2) {
-        return fullSizePage + index - 4;
+      
+      if (currentPage > 3 && currentPage > lastPage - 2) {
+        return lastPage + index - 4;
       }
       return 1 + index;
     });
